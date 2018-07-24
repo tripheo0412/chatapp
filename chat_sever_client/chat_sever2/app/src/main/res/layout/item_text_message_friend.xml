@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="start"
+    android:layout_marginTop="@dimen/mp_x_small"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvThumbnail"
+        android:layout_width="@dimen/thumbnail_size"
+        android:layout_height="@dimen/thumbnail_size"
+        android:layout_alignTop="@+id/Mess"
+        android:layout_marginLeft="@dimen/mp_normal"
+        android:layout_marginStart="@dimen/mp_normal"
+        android:background="@drawable/thumbnail_bg"
+        android:gravity="center"
+        android:maxLength="1"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="T" />
+
+    <RelativeLayout
+        android:id="@+id/Mess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mp_x_small"
+        android:layout_marginStart="@dimen/mp_x_small"
+        android:layout_toEndOf="@+id/tvThumbnail"
+        android:layout_toRightOf="@+id/tvThumbnail"
+        android:background="@drawable/message_friend_middle"
+        android:padding="@dimen/mp_small">
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:text="Trih" />
+
+        <TextView
+            android:id="@+id/tvMess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvUserName"
+            android:maxWidth="250dp"
+            android:textColor="@color/primary_text"
+            tools:text="lorem ipsum" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Mess"
+        android:layout_alignStart="@+id/Mess"
+        android:layout_alignLeft="@+id/Mess"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/mp_small"
+        android:layout_marginStart="@dimen/mp_small"
+        android:textColor="@color/secondary_text"
+        android:textSize="10sp"
+        android:visibility="gone"
+        tools:text="12:34" />
+</RelativeLayout>

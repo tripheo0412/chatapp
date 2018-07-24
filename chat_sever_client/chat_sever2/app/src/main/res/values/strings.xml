@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Chat Sever</string>
+    <string name="username">Username</string>
+    <string name="log_in">Log in</string>
+    <string name="mess_hint">Say something</string>
+    <string name="Chat_Sever">Chat Sever</string>
+    <string name="sign_out">Sign out</string>
+    <string name="online_friends">Online friends</string>
+    <string name="online">Online</string>
+    <string name="close">Close</string>
+</resources>
